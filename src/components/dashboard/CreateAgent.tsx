@@ -14,7 +14,7 @@ import {
 
 import WidgetPreview from "./WidgetPreview";
 import MotsClesInput from "./MotsClesInput";
-import type { AgentForm, Agent } from "./types";
+import type { AgentForm } from "./types";
 import { supabase } from "../../../Supabaseclient";
 import { useAuth } from "../../context/AuthContext";
 

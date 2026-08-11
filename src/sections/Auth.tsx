@@ -127,11 +127,10 @@ function LoginForm({ formKey, delay = 0.25, onSuccess }: LoginFormProps) {
 type RegisterFormProps = {
     formKey: string;
     delay?: number;
-    onSuccess: () => void;
     onSwitchToLogin: () => void;
 };
 
-function RegisterForm({ formKey, delay = 0.25, onSuccess, onSwitchToLogin }: RegisterFormProps) {
+function RegisterForm({ formKey, delay = 0.25, onSwitchToLogin }: RegisterFormProps) {
     const { signUp } = useAuth();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -375,7 +374,6 @@ export default function AuthPage({ onAuthSuccess = () => { } }: AuthPageProps) {
                             <RegisterForm
                                 formKey="register-mobile"
                                 delay={0.15}
-                                onSuccess={onAuthSuccess}
                                 onSwitchToLogin={() => setMode("login")}
                             />
                         )}
@@ -451,7 +449,7 @@ export default function AuthPage({ onAuthSuccess = () => { } }: AuthPageProps) {
                         {!isLogin && (
                             <RegisterForm
                                 formKey="register"
-                                onSuccess={onAuthSuccess}
+
                                 onSwitchToLogin={() => setMode("login")}
                             />
                         )}

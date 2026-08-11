@@ -9,7 +9,7 @@ import SettingsPage from "../components/dashboard/SettingsPage";
 import Documentation from "../components/dashboard/Documentation";
 
 import { useAgents } from "../hooks/useAgents";
-import type { QuestionSansReponse, AgentForm } from "../components/dashboard/types";
+import type { AgentForm } from "../components/dashboard/types";
 
 
 
@@ -79,20 +79,6 @@ export default function Dashboard() {
 
 
 
-    const handleAddToFaq = (
-
-        agentId: string,
-
-        question: QuestionSansReponse,
-
-        answer: string,
-        motsCles: string[]
-
-    ) => {
-
-        addToFaq(agentId, question, answer, motsCles);
-
-    };
 
 
 
