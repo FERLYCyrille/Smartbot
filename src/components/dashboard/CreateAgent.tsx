@@ -292,15 +292,7 @@ export default function CreateAgent({ onCancel, onCreated }: Props) {
                                         </div>
                                     ))}
 
-                                    <Field label="Endpoints API">
-                                        <textarea
-                                            value={form.endpoints}
-                                            onChange={(e) => update("endpoints", e.target.value)}
-                                            placeholder="Endpoints API"
-                                            rows={3}
-                                            className="input resize-none"
-                                        />
-                                    </Field>
+
                                 </div>
                             )}
 

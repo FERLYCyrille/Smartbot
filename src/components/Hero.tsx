@@ -98,6 +98,7 @@ export default function Hero() {
                 max-w-lg
                 text-zinc-900
               "
+
                         >
                             Votre FAQ devient un agent qui répond vraiment
                         </motion.h2>
@@ -143,9 +144,7 @@ export default function Hero() {
                                 </span>
                             </Link>
 
-                            <button className="text-black font-medium hover:opacity-60 transition">
-                                Voir une démo
-                            </button>
+
                         </motion.div>
                     </div>
 

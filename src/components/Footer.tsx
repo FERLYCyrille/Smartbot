@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, PinIcon } from "lucide-react";
+
 
 export default function Footer() {
     return (
@@ -24,20 +24,7 @@ export default function Footer() {
                             <li>Statut du système</li>
                         </ul>
 
-                        <div className="flex gap-3 mt-8">
-                            <SocialIcon>
-                                <MessageCircle size={16} />
-                            </SocialIcon>
-                            <SocialIcon>
-                                <MessageCircle size={16} />
-                            </SocialIcon>
-                            <SocialIcon>
-                                <PinIcon size={16} />
-                            </SocialIcon>
-                            <SocialIcon>
-                                <MessageCircle size={16} />
-                            </SocialIcon>
-                        </div>
+
                     </div>
 
                     {/* Products */}
@@ -75,16 +62,6 @@ export default function Footer() {
 
                     {/* Newsletter */}
                     <div>
-                        <h4 className="font-semibold mb-5">Newsletter</h4>
-
-                        <input
-                            placeholder="Entrez votre email"
-                            className="w-full rounded-xl border border-zinc-700 bg-transparent px-4 py-3 outline-none text-sm"
-                        />
-
-                        <button className="mt-4 rounded-full bg-white px-6 py-2 text-black text-sm font-medium">
-                            S'inscrire
-                        </button>
 
                         {/* Robot — visible ici uniquement sur mobile/tablette, dans le flux normal */}
                         <img
@@ -130,10 +107,3 @@ export default function Footer() {
     );
 }
 
-function SocialIcon({ children }: { children: React.ReactNode }) {
-    return (
-        <button className="flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-700 hover:bg-zinc-600 transition">
-            {children}
-        </button>
-    );
-}
