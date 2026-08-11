@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Widget Kadi</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 0 20px;
+            color: #14171F;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .info {
+            background: #FBF9F4;
+            border: 1px solid #DCD5C4;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Page de test — Widget Kadi</h1>
+
+    <p>
+        Cette page simule un site client qui a intégré le widget.
+        Si tout fonctionne, une bulle de chat doit apparaître en bas
+        de l'écran (position définie par <code>data-position</code>).
+    </p>
+
+    <div class="info">
+        <strong>Avant de tester :</strong>
+        <ol>
+            <li>Remplace <code>REMPLACE_PAR_LA_VRAIE_CLE</code> ci-dessous par la <code>cle</code> réelle d'un agent
+                existant dans ta table Supabase <code>agents</code>.</li>
+            <li>Vérifie que <code>widget.js</code> est bien uploadé dans ton bucket Storage.</li>
+            <li>Vérifie que l'Edge Function <code>chat-widget</code> est déployée.</li>
+            <li>Vérifie que le secret <code>ANTHROPIC_API_KEY</code> est configuré (sinon le fallback LLM affichera un
+                message d'indisponibilité, mais le matching FAQ direct fonctionnera quand même).</li>
+        </ol>
+    </div>
+
+    <p>
+        Ouvre la console du navigateur (F12) pour voir les éventuelles
+        erreurs réseau ou JS si la bulle n'apparaît pas.
+    </p>
+
+
+    <!-- Snippet généré par Kadi -->
+    <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Test Widget Kadi</title>
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                max-width: 600px;
+                margin: 80px auto;
+                padding: 0 20px;
+                color: #14171F;
+                line-height: 1.6;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            code {
+                background: #f1f1f1;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 13px;
+            }
+
+            .info {
+                background: #FBF9F4;
+                border: 1px solid #DCD5C4;
+                border-radius: 12px;
+                padding: 16px;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Page de test — Widget Kadi</h1>
+
+        <p>
+            Cette page simule un site client qui a intégré le widget.
+            Si tout fonctionne, une bulle de chat doit apparaître en bas
+            de l'écran (position définie par <code>data-position</code>).
+        </p>
+
+        <div class="info">
+            <strong>Avant de tester :</strong>
+            <ol>
+                <li>Remplace <code>REMPLACE_PAR_LA_VRAIE_CLE</code> ci-dessous par la <code>cle</code> réelle d'un agent
+                    existant dans ta table Supabase <code>agents</code>.</li>
+                <li>Vérifie que <code>widget.js</code> est bien uploadé dans ton bucket Storage.</li>
+                <li>Vérifie que l'Edge Function <code>chat-widget</code> est déployée.</li>
+                <li>Vérifie que le secret <code>ANTHROPIC_API_KEY</code> est configuré (sinon le fallback LLM affichera
+                    un message d'indisponibilité, mais le matching FAQ direct fonctionnera quand même).</li>
+            </ol>
+        </div>
+
+        <p>
+            Ouvre la console du navigateur (F12) pour voir les éventuelles
+            erreurs réseau ou JS si la bulle n'apparaît pas.
+        </p>
+
+        <script src="https://vbzrmzycrxwqdomlfkyi.supabase.co/storage/v1/object/public/widget/widget.js"
+            data-key="kadi_live_c7fece087d" data-color="#14171F" data-position="bas-droit"
+            data-icon="https://vbzrmzycrxwqdomlfkyi.supabase.co/storage/v1/object/public/agent-icons/20692ab1-b101-4375-8ad0-83b59215ad9b/1786047418345.png"></script>
+
+    </body>
+
+    </html>
+
+</body>
+
+</html>
